@@ -26,6 +26,64 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.card-container {
+  overflow: hidden;
+}
+
+.card-container:hover .card-image {
+  transform: scale(1.1) ; /* Adjust the scale value as needed */
+  transform-origin: center center; /* Zoom towards the center */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card-image {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.aos2-container {
+  overflow: hidden;
+}
+
+.aos2-container:hover p{
+  display: block;
+  transition:  0.2s ease-in-out;
+}
+
+.aos2-container:hover div{
+
+
+  transition:  0.2s ease-in-out;
+  backdrop-filter: blur(5px);
+}
+
+.heart{
+  transition:  0.2s ease-in-out;
+}
+
+.card-container:hover .heart {
+  transition:  0.2s ease-in-out;
+  scale: 1.2;
+  fill: white
+}
+
+.two-items::before {
+  align-self: stretch;
+  content: '';
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-width: 0.5px;
+}
+.two-items .flexbox-item:first-child {
+  order: -1;
+}
+.contact:hover .images{
+  transform: scale(1.2) ; /* Adjust the scale value as needed */
+  transform-origin: center center; /* Zoom towards the center */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  color: #ef7d00;
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
