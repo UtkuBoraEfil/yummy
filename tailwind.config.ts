@@ -56,10 +56,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "desktop-image": "url('/backgrounds/hero-bg-desktop.png')",
         "mobile-image": "url('/backgrounds/hero-bg-mobile.png')",
-        "dynamic-image1": "url('/locations/cepa.png')",
+        "dynamic-image1": "url('/locations/cepa.jpg')",
         "dynamic-image2": "url('/locations/kentpark.png')",
         "dynamic-image3": "url('/locations/ankamall.png')",
-        "menu-image": "url('/menu.png')",
       },
       transitionProperty: {
         "flex-basis": "flex-basis",
