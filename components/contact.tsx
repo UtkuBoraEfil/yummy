@@ -19,12 +19,12 @@ export default function Contact(){
                 </div>
             </div>
             <div className='flex justify-center gap-8 text-my-white  flexbox-item two-items' >
-                <div className='flex justify-end gap-5 flexbox-item'>
+                <div className='flex flex-col lg:flex-row  justify-end lg:gap-5 gap-2 flexbox-item'>
                     <p>Privacy Policy</p>
                     <p>Imprint</p>
                     <p>404</p>
                 </div>
-                <div className='flex justify-start gap-5 flexbox-item'>
+                <div className='flex flex-col lg:flex-row  justify-start lg:gap-5 gap-2 flexbox-item'>
                     <p>Homepage</p>
                     <p>Menu</p>
                     <p>Locations</p>
