@@ -1,5 +1,5 @@
 import Card2 from "./card2";
-import {card2data} from '../lib/placeholder-data';
+import {card2data} from '@/lib/placeholder-data';
 
 export default  function Cards2(){
 

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Sora }  from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
-const sora = Sora({ weight: ['400', '700'], subsets: ['latin'] });
+const sora = Sora({ weight: ["400", "700"], subsets: ["latin"] });
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sora.className}`}>{children}</body>
+      <body className={`${sora.className} `}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
