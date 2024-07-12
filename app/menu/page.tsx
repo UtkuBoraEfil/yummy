@@ -21,10 +21,10 @@ export default function Menu() {
           <div className=" bg-my-white-smoke rounded-3xl flex flex-col  pt-14">
             <div className=" flex flex-col justify-end max-w-[600px] mx-auto shrink-0 p-3 gap-20 three-items">
               <div className="flexbox-item">
-                <p className="xl:text-md lg:text-mdm text-mds font-light leading-none pb-8">
+                <p className="xl:text-md lg:text-mdm text-mds font-semibold leading-none pb-8">
                   It&apos;s not your typical. It's unnecessarily good.
                 </p>
-                <p className="xl:text-md lg:text-mdm text-mds font-light leading-none flexbox-item">
+                <p className="xl:text-md lg:text-mdm text-mds font-semibold leading-none flexbox-item">
                   Maybe that's because we're unnecessarily driven.
                 </p>
               </div>
