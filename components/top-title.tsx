@@ -27,7 +27,7 @@ export function TopTitle() {
       </h1>
 
       <p className="max-w-xl text-center mx-auto xl:text-sm lg:text-smmd text-smmob">
-        Our coffee doesn’t have to taste that way. But it does.It’s not your
+        Our coffee doesn&apos;t have to taste that way. But it does.It&apos;s not your
         typical. It's unnecessarily good. Maybe that's because we're
         unnecessarily driven.{" "}
       </p>

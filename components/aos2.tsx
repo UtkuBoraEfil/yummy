@@ -8,7 +8,7 @@ export default function Aos2() {
           Another Menu
         </h1>
         <p className="xl:text-sm lg:text-smmd text-smmob  lg:max-w-[388px] leading-none pt-4 text-my-light-gray lg:text-left text-center">
-          We go places that others wouldn’t. For us, “too far” is exactly where
+          We go places that others wouldn&apos;t. For us, “too far” is exactly where
           we want to be. All in the name of coffee.
         </p>
       </div>
@@ -31,7 +31,7 @@ export default function Aos2() {
               Menu
             </h1>
             <p className="xl:text-sl lg:text-sm text-smmd leading-none hidden">
-              It doesn’t have to taste that way. But it does. It’s not your
+              It doesn&apos;t have to taste that way. But it does. It&apos;s not your
               typical. It's unnecessarily good.
             </p>
           </div>

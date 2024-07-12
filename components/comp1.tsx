@@ -29,7 +29,7 @@ export default function Comp1() {
      
       className="max-w-lg">
         <h2 className=" xl:text-mdm lg:text-mds text-lgmob leading-tight">
-          It doesn’t have to taste that way. But it does. It’s not your typical.
+          It doesn&apos;t have to taste that way. But it does. It&apos;s not your typical.
           It's unnecessarily good.
         </h2>
       </motion.div>
