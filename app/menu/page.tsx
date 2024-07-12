@@ -7,7 +7,7 @@ import Bottom from "@/components/bottom";
 export default function Menu() {
   return (
     <section className="min-h-screen bg-my-white p-2 grid lg:grid-cols-2 gap-4">
-      <div className=" w-full lg:min-h-[200vh]  h-[30vh] border border-blue-300">
+      <div className=" w-full lg:min-h-[200vh]  h-[30vh]">
         <div className="bg-menu-image bg-cover top-2  h-[30vh] lg:min-h-[calc(100svh-15px)] w-full  bg-no-repeat  bg-center rounded-3xl flex flex-col justify-end self-start border  sticky">
           <h1 className="pl-5 pb-2 left-3 xl:text-2xl lg:text-2xlm text-2xlmob font-semibold text-my-white">
             Menu

@@ -19,12 +19,14 @@ export function TopTitle() {
       }}
       className=" mx-auto"
     >
-      <p className=" xl:text-lg lg:text-lg text-lgmob leading-none font-semibold">
-        Enjoy the taste of
-      </p>
-      <h1 className=" xl:text-3xl lg:text-3xlg text-3xlmob leading-none font-bold ">
-        botanical
-      </h1>
+      <div className="max-w-fit mx-auto">
+        <p className=" xl:text-lg lg:text-lg text-lgmob leading-none font-semibold max-w-fit ">
+          Enjoy the taste of
+        </p>
+        <h1 className=" xl:text-3xl lg:text-3xlg text-3xlmob leading-none font-bold max-w-fit ">
+          botanical
+        </h1>
+      </div>
 
       <p className="max-w-xl text-center mx-auto xl:text-sm lg:text-smmd text-smmob">
         Our coffee doesn&apos;t have to taste that way. But it does.It&apos;s not your

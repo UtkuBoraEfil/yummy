@@ -10,7 +10,7 @@ export default function Top() {
       <div className="h-[98vh]">
         <div className="relative  bg-leaf-image bg-cover  max-h-[98vh] h-screen bg-no-repeat  bg-center rounded-3xl pt-5 px-3 image-container">
           <div className="relative text-my-white  h-[90vh] grid place-items-center z-[3]">
-            <div className="w-full flex flex-col pb-14">
+            <div className="w-full flex flex-colr pb-14">
               {/* <div className=" mx-auto">
                 <p className=" xl:text-lg lg:text-lg text-lgmob leading-none font-semibold">
                   Enjoy the taste of
