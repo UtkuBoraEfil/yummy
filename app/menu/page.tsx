@@ -6,9 +6,9 @@ import Bottom from "@/components/bottom";
 
 export default function Menu() {
   return (
-    <section className="min-h-screen bg-my-white p-2 grid lg:grid-cols-2 gap-4">
-      <div className=" w-full lg:min-h-[200vh]  h-[30vh]">
-        <div className="bg-menu-image bg-cover top-2  h-[30vh] lg:min-h-[calc(100svh-15px)] w-full  bg-no-repeat  bg-center rounded-3xl flex flex-col justify-end self-start border  sticky">
+    <section className="min-h-screen bg-my-white p-2 grid xl:grid-cols-2 gap-4">
+      <div className=" w-full xl:min-h-[200vh] ">
+        <div className="bg-menu-image bg-cover top-2  h-[30vh] xl:min-h-[calc(100svh-15px)] w-full  bg-no-repeat  bg-center rounded-3xl flex flex-col justify-end self-start border  xl:sticky">
           <h1 className="pl-5 pb-2 left-3 xl:text-2xl lg:text-2xlm text-2xlmob font-semibold text-my-white">
             Menu
           </h1>
@@ -16,7 +16,7 @@ export default function Menu() {
       </div>
 
 
-      <div className="flex gap-10  justify-between border ">
+      <div className="flex gap-10  justify-between  ">
         {/* <div className=" w-1/2 h-full p-2 "></div> */}
         <div className="w-full">
           <div className=" bg-my-white-smoke rounded-3xl flex flex-col  pt-14">
