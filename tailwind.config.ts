@@ -1,3 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -52,10 +54,11 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "leaf-image": "url('/leafs.jpg')",
-        "dynamic-image1": "url('/img1.jpg')",
-        "dynamic-image2": "url('/img2.jpg')",
-        "dynamic-image3": "url('/2.jpg')",
+        "desktop-image": "url('/backgrounds/hero-bg-desktop.png')",
+        "mobile-image": "url('/backgrounds/hero-bg-mobile.png')",
+        "dynamic-image1": "url('/locations/cepa.png')",
+        "dynamic-image2": "url('/locations/kentpark.png')",
+        "dynamic-image3": "url('/locations/ankamall.png')",
         "menu-image": "url('/menu.png')",
       },
       transitionProperty: {
@@ -66,6 +69,10 @@ const config: Config = {
       },
       transitionTimingFunction: {
         "ease-in-out": "ease-in-out",
+      },
+
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
     },
   },

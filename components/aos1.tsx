@@ -3,21 +3,14 @@ import React, { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 
 export default function Aos1() {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start center", "30% center"],
-  });
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
+ 
 
   return (
     <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgress,
-        opacity: opacityProgress,
-      }}
+    initial={{ scale: 0.8, opacity: 0, y: 50 }}
+    whileInView={{ scale: 1, opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, ease: "easeOut" }}
+    viewport={{ once: true, amount: "all" }}
     >
       <section className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto px-5 ">
         <h1 className=" basis-1/2 xl:text-2xl lg:text-2xlm text-2xlmob font-bold pt-16 lg:pb-10 leading-none text-center xl:text-left">

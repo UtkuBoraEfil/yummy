@@ -40,7 +40,7 @@ body {
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.3) 35%,
+      rgba(0, 0, 0, 0.5) 60%,
       rgba(0, 0, 0, 0) 100%
     );
     z-index: 1;
@@ -112,6 +112,14 @@ body {
 }
 .three-items .flexbox-item:last-child {
   order: 1;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.06);
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 @layer utilities {

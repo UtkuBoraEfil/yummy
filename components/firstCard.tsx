@@ -2,34 +2,42 @@
 import Image from "next/image";
 import Link from "next/link";
 import arrow from "@/public/arrow.svg";
-import { motion, stagger } from "framer-motion";
+import { animate, motion, stagger, useAnimate } from "framer-motion";
+import { useEffect } from "react";
 
 const MotionImage = motion(Image);
 
-const defaultVariant = {
-  animate: {
+const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
+
+const variants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
     opacity: 1,
     y: 0,
     transition: {
-      staggerChildren: 0.5,
+      delay: 0.3 * (index + 1),
+      ease: "easeOut",
     },
+  }),
+};
+
+const IMAGE_DATA = [
+  {
+    src: "/mourinho.jpg",
+    alt: "Jose Mourinho",
   },
-};
-
-const containerVariant = {
-  animate: {
-    transition: {
-      staggerChildren: 0.2,
-    },
+  {
+    src: "/mou.jpeg",
+    alt: "Jose Mourinho",
   },
-};
-
-// Image variant
-const imageVariant = {
-  initial: { y: 50, opacity: 0 },
-  animate: { y: 0, opacity: 1 },
-};
-
+  {
+    src: "/haci.jpg",
+    alt: "product img",
+  },
+];
 
 export default function FirstCard() {
   return (
@@ -48,44 +56,31 @@ export default function FirstCard() {
       className=" w-full flex flex-col lg:flex-row   justify-between absolute bottom-5"
     >
       <div className="flex gap-1">
-        <div className=" w-56 border py-6 px-3 rounded-3xl backdrop-blur-md ">
-          <h2 className="xl:text-md lg:text-mdm text-mds text-my-white">
+        <div className="flex flex-col gap-3 w-64 border py-6 px-3 rounded-3xl glassmorphism">
+          <h2 className="xl:text-md lg:text-mdm text-mds text-my-white font-semibold">
             99+Slaves
           </h2>
-          <p className="xl:text-sm lg:text-smmd text-smmob">
+          <p className="xl:text-sm lg:text-smmd text-smmob font-light">
             “Too far” is exactly where we want to be. All in the name of coffee.
           </p>
         </div>
-        <motion.div
-          variants={containerVariant}
-          initial="initial"
-          animate="animate"
-          className="border px-2.5 py-3 rounded-3xl backdrop-blur-md flex flex-col relative"
-        >
-          <MotionImage
-            variants={imageVariant}
-            src={"/mourinho.jpg"}
-            alt="Jose Mourinho"
-            className="w-14  h-14 rounded-full border border-white/50 object-center z-[2]"
-            width={60}
-            height={60}
-          />
-          <MotionImage
-            variants={imageVariant}
-            src={"/mou.jpeg"}
-            alt="Jose Mourinho"
-            className="w-14 h-14  rounded-full border border-white/50 object-center -mt-3 z-[1]"
-            width={60}
-            height={60}
-          />
-          <MotionImage
-            variants={imageVariant}
-            src={"/haci.jpg"}
-            alt="product img"
-            className="w-14 h-14 rounded-full border border-white/50 object-center -mt-4"
-            width={60}
-            height={60}
-          />
+
+        {/* Image */}
+        <motion.div className="border px-2.5 py-3 rounded-3xl backdrop-blur-md flex flex-col relative glassmorphism">
+          {IMAGE_DATA.map((item, index) => (
+            <MotionImage
+              key={`${item.src}-${index}`}
+              src={item.src}
+              alt={item.alt}
+              className="w-14  h-14 rounded-full border border-white/50 object-center z-[2] last:-mt-4 even:-mt-3 first:z-[2] even:z-[1] last:z-[0]"
+              width={60}
+              height={60}
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              custom={index}
+            />
+          ))}
         </motion.div>
       </div>
       <Image
