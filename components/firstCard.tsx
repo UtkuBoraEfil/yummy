@@ -58,7 +58,7 @@ export default function FirstCard() {
       <div className="flex gap-1">
         <div className="flex flex-col gap-3 w-64 border py-6 px-3 rounded-3xl glassmorphism">
           <h2 className="xl:text-md lg:text-mdm text-mds text-my-white font-semibold">
-            99+Slaves
+            99+Beans
           </h2>
           <p className="xl:text-sm lg:text-smmd text-smmob font-light">
             “Too far” is exactly where we want to be. All in the name of coffee.

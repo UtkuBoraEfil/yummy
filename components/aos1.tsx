@@ -17,7 +17,8 @@ export default function Aos1() {
           Unnecessarily Good Good(s)
         </h1>
         <div className="basis-1/2 lg:relative pb-10 flex justify-center lg:flex-none lg:justify-normal">
-          <button className=" bg-my-black border hover:bg-my-white-smoke hover:text-my-black transition-all duration-300 ease-out text-my-white xl:text-sl lg:text-smd text-sm rounded-3xl py-2 px-8 lg:absolute lg:bottom-14 w-36">
+          <button className=" bg-my-black border hover:bg-my-white-smoke hover:text-my-black transition-all duration-300 ease-out
+           text-my-white xl:text-sl lg:text-smd text-sm rounded-3xl py-2 px-8 lg:absolute lg:bottom-14 w-36">
             Shop all
           </button>
         </div>
