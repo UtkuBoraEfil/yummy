@@ -24,7 +24,7 @@ export function TopTitle() {
           Enjoy the taste of
         </p>
         <h1 className=" xl:text-3xl lg:text-3xlg text-3xlmob leading-none font-bold max-w-fit ">
-          botanical
+          YUMMY
         </h1>
       </div>
 
